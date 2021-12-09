@@ -1,7 +1,7 @@
 package com.Alkemy.disneyCharacters.auth.filter;
 
-import com.Alkemy.disneyCharacters.auth.service.JwtUtils;
-import com.Alkemy.disneyCharacters.auth.service.UserDetailsCustomService;
+import com.Alkemy.disneyCharacters.service.impl.JwtUtils;
+import com.Alkemy.disneyCharacters.service.impl.UserDetailsCustomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

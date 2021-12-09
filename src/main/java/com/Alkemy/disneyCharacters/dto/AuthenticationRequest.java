@@ -1,4 +1,4 @@
-package com.Alkemy.disneyCharacters.auth.dto;
+package com.Alkemy.disneyCharacters.dto;
 
 import lombok.Getter;
 import lombok.Setter;

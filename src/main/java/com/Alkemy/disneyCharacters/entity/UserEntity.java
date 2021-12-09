@@ -1,4 +1,4 @@
-package com.Alkemy.disneyCharacters.auth.entity;
+package com.Alkemy.disneyCharacters.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

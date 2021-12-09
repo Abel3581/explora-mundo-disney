@@ -1,6 +1,6 @@
-package com.Alkemy.disneyCharacters.auth.repository;
+package com.Alkemy.disneyCharacters.repository;
 
-import com.Alkemy.disneyCharacters.auth.entity.UserEntity;
+import com.Alkemy.disneyCharacters.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package com.Alkemy.disneyCharacters.auth.service;
+package com.Alkemy.disneyCharacters.service.impl;
 
-import com.Alkemy.disneyCharacters.auth.dto.UserDTO;
-import com.Alkemy.disneyCharacters.auth.entity.UserEntity;
-import com.Alkemy.disneyCharacters.auth.repository.UserRepository;
+import com.Alkemy.disneyCharacters.dto.UserDTO;
+import com.Alkemy.disneyCharacters.entity.UserEntity;
+import com.Alkemy.disneyCharacters.repository.UserRepository;
 import com.Alkemy.disneyCharacters.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;

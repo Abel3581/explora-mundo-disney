@@ -20,10 +20,10 @@ public class EmailServiceImpl implements EmailService {
     @Autowired
     private Environment env;
 
-    @Value("${alkemy.icons.email.sender}")
+    @Value("${alkemy.disney.email.sender}")
     private String emailSender;
 
-    @Value("${alkemy.icons.email.enabled}")
+    @Value("${alkemy.disney.email.enabled}")
     private boolean enabled;
 
     public void sendWelcomeEmailTo(String to) {
@@ -34,8 +34,8 @@ public class EmailServiceImpl implements EmailService {
         Email fromEmail = new Email(emailSender);
         Email toEmail = new Email(to);
 
-        Content content = new Content("text/plain", "Bienvenido/a a Alkemy Icons");
-        String subject = "Alkemy Icons";
+        Content content = new Content("text/plain", "Bienvenido/a a Alkemy Disney");
+        String subject = "Alkemy Disney";
 
         Mail mail = new Mail(fromEmail, subject, toEmail, content);
         SendGrid sg = new SendGrid(apiKey);

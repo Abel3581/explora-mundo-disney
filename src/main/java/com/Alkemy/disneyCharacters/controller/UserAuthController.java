@@ -1,10 +1,10 @@
-package com.Alkemy.disneyCharacters.auth.controller;
+package com.Alkemy.disneyCharacters.controller;
 
-import com.Alkemy.disneyCharacters.auth.dto.AuthenticationRequest;
-import com.Alkemy.disneyCharacters.auth.dto.AuthenticationResponse;
-import com.Alkemy.disneyCharacters.auth.dto.UserDTO;
-import com.Alkemy.disneyCharacters.auth.service.JwtUtils;
-import com.Alkemy.disneyCharacters.auth.service.UserDetailsCustomService;
+import com.Alkemy.disneyCharacters.dto.AuthenticationRequest;
+import com.Alkemy.disneyCharacters.dto.AuthenticationResponse;
+import com.Alkemy.disneyCharacters.dto.UserDTO;
+import com.Alkemy.disneyCharacters.service.impl.JwtUtils;
+import com.Alkemy.disneyCharacters.service.impl.UserDetailsCustomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
