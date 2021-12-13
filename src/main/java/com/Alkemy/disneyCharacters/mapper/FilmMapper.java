@@ -24,6 +24,13 @@ public class FilmMapper {
     @Autowired
     private CharacterMapper characterMapper;
 
+
+    private LocalDate string2LocalDate(String stringDate) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate date = LocalDate.parse(stringDate, formatter);
+        return date;
+    }
+
     public FilmEntity filmDTO2Entity(FilmDTO dto, boolean loadCharacters, boolean loadGenres) {
         FilmEntity filmEntity = new FilmEntity();
         filmEntity.setImage(dto.getImage());
@@ -75,11 +82,7 @@ public class FilmMapper {
         return paisEntities;
     }
 
-    private LocalDate string2LocalDate(String stringDate) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate date = LocalDate.parse(stringDate, formatter);
-        return date;
-    }
+
 
     public List<FilmBasicDTO> filmEntityList2BasicDTOList(List<FilmEntity> entities) {
         List<FilmBasicDTO> dtos = new ArrayList<>();
